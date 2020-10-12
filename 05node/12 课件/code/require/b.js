@@ -1,5 +1,12 @@
 console.log("b.js文件...")
-define({
-    name:"b的名字",
-    height:"178cm"
-});
+// define({
+//     name:"b的名字",
+//     height:"178cm"
+// });
+
+define(function(){
+    return {
+        name:"b的名字",
+        height:"178cm"
+    }
+})
