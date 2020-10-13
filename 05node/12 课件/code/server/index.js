@@ -7,10 +7,10 @@ const server = http.createServer((req, res) => {
     res.setHeader("content-type", "text/html;charset=utf-8");
     //    res.writeHead(300,{"content-type":"text/html;charset=utf-8"})
     console.log(req.url);
-    // let urlObj = url.parse(req.url);
+    let urlObj = url.parse(req.url);
     // console.log(urlObj);
     // 1."/product"    2."/product?name=zhangsan"; 查询参：querystring
-    /*
+    
     if (urlObj.pathname === "/" || urlObj.pathname === "/index") {
         // 文件读取；
         // let indexData =  fs.readFileSync("./views/index.html")
@@ -32,7 +32,6 @@ const server = http.createServer((req, res) => {
             let resData = fs.createReadStream("./views" + urlObj.pathname);
             resData.pipe(res);
         }
-    }
-    */
+    } 
 })
 server.listen(3000);
