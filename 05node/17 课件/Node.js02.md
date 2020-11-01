@@ -202,7 +202,7 @@
       - 对资源的各种操作不会改变资源标识
       - 所有操作都是无状态的
 
-###二、koa-views 
+### 二、koa-views 
 
 - Koa-views用于加载html模板文件；
 
@@ -212,8 +212,7 @@
 
   - 使用koa-view
 
-
-###三、koa-static
+### 三、koa-static
 
 - koa-static     是用于加载静态资源的中间件，通过它可以加载css、js等静态资源；
 
@@ -228,7 +227,7 @@
   app.use(static(__dirname+"/static")) //加载静态文件的目录
   ```
 
-###四、模板引擎pug
+### 四、模板引擎pug
 
 ​	 模板引擎：模板引擎是web应用中动态生成html的工具，负责将数据和模板结合。常用的模板引擎有ejs 、jade（现更名pug）、Handlebars、Nunjucks、swig 等，每种模板引擎功能类似，语法不同。
 

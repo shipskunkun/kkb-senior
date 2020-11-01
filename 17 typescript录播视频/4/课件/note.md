@@ -22,8 +22,18 @@
 
 3. this 值
 
-   ​	js 是动态类型语言，所以之前的 this 类型是any
+   ​	js 是动态类型语言，所以对象中的方法 中的 this 类型是any
 
    ​	
 
-4. 
+4. 函数重载
+
+    定义不同的参数匹配规则
+
+    ```js
+    function css(ele: HTMLElement, attr: PlainObject);
+    function css(ele: HTMLElement, attr: string, value: string|number);
+    function css(ele: HTMLElement, attr: any, value?: any) 
+    ```
+
+    
