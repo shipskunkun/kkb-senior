@@ -23,7 +23,7 @@ tsc --outDir ./dist ./src/helloKaiKeBa.ts
     "compilerOptions": {
         "outDir": "./dist",   // 输出目录
         "target": "ES2015",   //指定编译的代码版本目标，默认为 ES3
-    "watch": true,            //在监听模式下运行，当文件发生改变的时候自动编译
+    		"watch": true,            //在监听模式下运行，当文件发生改变的时候自动编译
     },
   // ** : 所有目录（包括子目录）
   // * : 所有文件，也可以指定类型 *.ts
