@@ -8,29 +8,17 @@
 </head>
 <body>
 <script>
-let obj1 = {
+let obj = {
     a: 1,
-    b: 2,
-    c: {
-        d: 3,
-        f: 4,
-        e: 5
-    }
+    b: 2
 };
 let obj2 = {
-    a: 2,
-    f: 3,
-    d: 4,
-    c: {
-        d: 6,
-        f: 7,
-        e: 8
-    }
+    c: 3,
+    d: 4
 };
-
-let obj4 = $.extend(true,{},obj1, obj2);
-
-
+let f = null;
+let obj3 = Object.assign({},obj,obj2,{f});
+console.log(obj,obj2,obj3);
 </script>    
 </body>
 </html>
