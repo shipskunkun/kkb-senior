@@ -213,7 +213,7 @@ fn();
 
 ### 数组新增方法
 
-Array.from、Array.isArray、arr.find、findIndex、includes、flat
+Array.from、Array.isArray、arr.find、findIndex、includes、flat、Array.fill
 
 不常用的：Array.of
 
@@ -228,6 +228,12 @@ Array Array.of(element0[, element1[, ...[, elementN]]]) 将参数转成一个数
 
 返回值：   
     新数组
+
+
+
+Array.fill 在写算法的时候经常用到，数组初始化
+
+
 
 #### 模板字符串
 
@@ -246,9 +252,7 @@ let str = `姓名：${[1,2,3,4]}，
 
 #### 对象的属性和方法
 
-简写：
-
-属性可以使用表达式
+**对象的属性，可以是一个方法，也可以是一个表达式**
 
 
 ```js
@@ -276,15 +280,16 @@ let obj1 = {
 };
 let obj2 = {
     a: 2,
-    f: 3,
     d: 4,
     c: {
         d: 6,
         f: 7,
-        e: 8
+      	g: 9
     }
 };
-let f = null;
+
+猜猜obj3.c 是否有e 属性？没有
+
 let obj3 = Object.assign(obj1, obj2);
 let obj4 = $.extend(true,{},obj1, obj2);
 
